@@ -8,7 +8,7 @@ import Login from "./components/Login";
 export default function App() {
   const [logon, setlogon] = useState(false);
 
-  if (!logon) {
+  if (logon) {
     return <Desktop />;
   } else {
     return <Login setlogon={setlogon} />;
