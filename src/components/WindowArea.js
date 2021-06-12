@@ -1,4 +1,5 @@
 import React from "react";
+import Draggable from "react-draggable";
 
 function TrafficLights({ setCurrentApp, setMax, max }) {
   return (
@@ -28,13 +29,24 @@ export default function WindowArea({ currentApp, setCurrentApp }) {
     return <div />;
   }
   return (
-    <div
-      className={`transition-hw mt-6 mb-8 mx-auto rounded-lg bg-white ${size}`}>
-      <div className="relative h-6 text-center bg-gray-300 rounded-t-lg">
-        <TrafficLights setCurrentApp={setCurrentApp} max={max} setMax={setMax} />
-        <span className="font-semibold text-gray-700">{currentApp.title}</span>
+    <Draggable>
+      <div
+        className={`transition-hw mt-6 mb-8 mx-auto rounded-lg bg-white ${size}`}
+      >
+        <div className="relative h-6 text-center bg-gray-300 rounded-t-lg">
+          <TrafficLights
+            setCurrentApp={setCurrentApp}
+            max={max}
+            setMax={setMax}
+          />
+          <span className="font-semibold text-gray-700">
+            {currentApp.title}
+          </span>
+        </div>
+        <div className="abcd w-full overflow-y-hidden">
+          {currentApp.content?.() ?? `I'm ${currentApp.title} app`}
+        </div>
       </div>
-      <div className="abcd w-full overflow-y-hidden">{currentApp.content?.() ?? `I'm ${currentApp.title} app`}</div>
-    </div>
+    </Draggable>
   );
 }

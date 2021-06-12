@@ -10,10 +10,14 @@
     "date-fns": "2.16.1",
     "react": "17.0.0",
     "react-dom": "17.0.0",
+    "react-draggable": "4.4.3",
     "react-feather": "2.0.9",
+    "react-icons": "4.2.0",
+    "react-osx-dock": "1.0.0",
     "react-rangeslider": "2.2.0",
     "react-scripts": "3.4.3",
-    "react-webcam": "5.2.2"
+    "react-webcam": "5.2.2",
+    "use-sound": "3.0.1"
   },
   "devDependencies": {
     "typescript": "3.8.3"

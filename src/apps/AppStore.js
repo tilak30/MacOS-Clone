@@ -28,5 +28,16 @@ export const apps = [
     title: "TextEdit",
     icon: "notes",
     content: () => <TextEditor />
+  },
+  {
+    title: "Calculator",
+    icon: "calculator",
+    content: () => "App to be delivered soon"
+  },
+  {
+    title: "AppStore",
+    icon: "appstore",
+    content: () => "App to be delivered soon"
   }
 ];
+

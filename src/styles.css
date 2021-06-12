@@ -66,3 +66,17 @@ body {
 .slider .rangeslider .rangeslider__handle::after {
   display: none;
 }
+
+ul.osx-dock li span {
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  position: absolute;
+  bottom: 80px;
+  margin: 0 auto;
+  display: none;
+  padding: 3px 6px;
+  color: #fff;
+}
+ul.osx-dock li:hover span {
+  display: block;
+}
